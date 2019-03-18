@@ -12,6 +12,11 @@ describe('Bank;', function(){
     bank.deposit(10);
     expect(bank.balance()).toEqual(10);
   });
+  it('can deposit from bank account', function(){
+    bank.deposit(10);
+    bank.withdraw(2);
+    expect(bank.balance()).toEqual();
+  });
 
 
 });
